@@ -2,19 +2,19 @@
 - name: Install hadoop master node
   hosts: hadoop-master
   remote_user: ubuntu
-  sudo: yes
+  become: yes
 
   roles:
     - common
-    - oraclejava8
+#    - oraclejava8
     - master
 
 - name: Install hadoop data nodes
   hosts: hadoop-data
   remote_user: ubuntu
-  sudo: yes
+  become: yes
 
   roles:
     - common
-    - oraclejava8
+#    - oraclejava8
 #    - data
