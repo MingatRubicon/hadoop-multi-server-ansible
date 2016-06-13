@@ -1,0 +1,13 @@
+datanodes:
+  - hostname: bd-test2-1
+    ip: 192.168.0.13
+  - hostname: bd-test2-2
+    ip: 192.168.0.14
+  - hostname: bd-test2-3
+    ip: 192.168.0.15
+  - hostname: bd-test2-4
+    ip: 192.168.0.16
+  - hostname: bd-test2-5
+    ip: 192.168.0.17
+  - hostname: bd-test2-6
+    ip: 192.168.0.18

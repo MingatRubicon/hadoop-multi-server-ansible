@@ -1,0 +1,15 @@
+# FIXME: how to derive node list from vars
+
+[hadoop-master]
+bd-test2-0
+
+[hadoop-data]
+bd-test2-[1:6]
+
+[hadoop-master:vars]
+namenodesfile=namenodes
+datanodesfile=datanodes
+
+[hadoop-data:vars]
+namenodesfile=namenodes
+datanodesfile=datanodes
