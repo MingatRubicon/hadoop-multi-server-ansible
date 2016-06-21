@@ -18,8 +18,8 @@
 - command: mv /usr/local/hadoop-{{ hadoop_ver }} /usr/local/hadoop creates=/usr/local/hadoop removes=/usr/local/hadoop-{{ hadoop_ver }}
 
 - lineinfile: dest=/home/{{ hadoop_user }}/.bashrc regexp="HADOOP_HOME=" line="export HADOOP_HOME=/usr/local/hadoop"
-- lineinfile: dest=/home/{{ hadoop_user }}/.bashrc regexp="PATH=" line="export PATH=$PATH:$HADOOP_HOME/bin"
-#- lineinfile: dest=/home/{{ hadoop_user }}/.bashrc regexp="HADOOP_SSH_OPTS=" line="export HADOOP_SSH_OPTS=\"-i /home/{{ hadoop_user }}/.ssh/hadoop_rsa\""
+- lineinfile: dest=/home/{{ hadoop_user }}/.bashrc regexp="PATH=" line="export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin"
+  #- lineinfile: dest=/home/{{ hadoop_user }}/.bashrc regexp="HADOOP_SSH_OPTS=" line="export HADOOP_SSH_OPTS=\"-i /home/{{ hadoop_user }}/.ssh/hadoop_rsa\""
 
 # TODO: consider to make this vars.
 - file: path=/home/{{ hadoop_user }}/tmp state=directory owner={{ hadoop_user}} group={{ hadoop_group }} mode=750
