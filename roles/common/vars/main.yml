@@ -3,10 +3,11 @@ hadoop_user: hadoop
 hadoop_group: hadoop
 
 # make sure use right repo
-hadoop_ver: 2.3.0
-
-# old Hadoop need to get from archive repo
-hadoop_download_url: http://archive.apache.org/dist/hadoop/core/hadoop-{{ hadoop_ver }}/hadoop-{{ hadoop_ver }}.tar.gz
+#hadoop_ver: 2.3.0
+#hadoop_download_url: http://archive.apache.org/dist/hadoop/core/hadoop-{{ hadoop_ver }}/hadoop-{{ hadoop_ver }}.tar.gz
 
 # new hadoop
-#hadoop_download_url: http://apache.cs.utah.edu/hadoop/common/hadoop-{{ hadoop_ver }}/hadoop-{{ hadoop_ver }}.tar.gz
+hadoop_ver: 2.7.2
+hadoop_download_url: http://apache.cs.utah.edu/hadoop/common/hadoop-{{ hadoop_ver }}/hadoop-{{ hadoop_ver }}.tar.gz
+
+java_path: /usr/lib/jvm/java-7-oracle/
